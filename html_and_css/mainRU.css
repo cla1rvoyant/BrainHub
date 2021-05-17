@@ -392,7 +392,6 @@ a:nth-child(3){
   transform: translateY(-7px);
 }
 .t {
-  width: 1000px;
   background-size: cover;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -436,9 +435,6 @@ a:nth-child(3){
     width: 600px;
   }
   .footer {
-    width: 600px;
-  }
-  .data {
     width: 600px;
   }
 }
