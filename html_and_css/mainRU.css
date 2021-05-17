@@ -408,3 +408,67 @@ a:nth-child(3){
   font-family: 'Padauk', sans-serif;
   color: white;
 }
+@media (max-width: 1100px) {
+  .t p {
+    width: 700px;
+  }
+  .t {
+    width: 1100px;
+  }
+}
+@media (max-width: 1300px) {
+  .t p {
+    width: 800px;
+  }
+  .t {
+    width: 1300px;
+  }
+  .texts p:nth-child(1) {
+    width: 800px;
+  }
+  .texts p:nth-child(2) {
+    width: 800px;
+  }
+  .texts p:nth-child(3) {
+    width: 800px;
+  }
+  .texts p:nth-child(4) {
+    width: 800px;
+  }
+  .texts p:nth-child(5) {
+    width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  .t p {
+    width: 600px;
+  }
+  .t {
+    width: 600px;
+  }
+  .texts p:nth-child(1) {
+    width: 600px;
+  }
+  .texts p:nth-child(2) {
+    width: 600px;
+  }
+  .texts p:nth-child(3) {
+    width: 600px;
+  }
+  .texts p:nth-child(4) {
+    width: 600px;
+  }
+  .texts p:nth-child(5) {
+    width: 600px;
+  }
+  .cont {
+    height: 1200px;
+    width: 600px;
+  }
+  .footer {
+    width: 600px;
+  }
+  .data {
+    width: 600px;
+  }
+}
