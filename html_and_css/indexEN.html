@@ -14,7 +14,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+    <div class="main" id="home">
         <div class="nav-bar" id="nav">
             <div class="header">
                 <span>B</span>
@@ -27,13 +42,10 @@
                 <span>b</span>
             </div>
             <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
                 <a href="contactsEN.html"><i class="fas fa-phone"></i></a>
             </div>
-        </div>
-        <div class="made">
-          <h2>made by Mikhail Kryukov</h2>
         </div>
         <div class="main-page">
             <h1>Welcome to the largest resource on the science of health!</h1>
@@ -44,7 +56,7 @@
         </div>
     </div>
     <div class="two">
-      <div class="header2">
+      <div class="header2" id="about">
         <h1>About us</h1>
         <div class="container"></div>
           <div class="text">
@@ -53,67 +65,35 @@
           <div class="bottom-line"></div>
           <div class="middle-block">
             <div class="t">
-              <h1>Sound - the basis of music - has physical parameters: rhythm, frequency, volume.</h1>
-              <h1>Rhythm</h1>
-              <p>In nature, everything is subject to rhythm. The human body is designed in such a way that it adopts the rhythms dictated by the external environment.
-                Musical rhythm can influence the rhythm of heartbeats, adjust the rhythm of breathing. If a person is imposed on a rhythm unusual for him, he will feel discomfort, irritation and aggression, and repeated exposure can lead to diseases.
-                At a rhythm multiple of 1.5 beats / sec, accompanied by powerful super frequencies (15-30 Hz), a person experiences ecstasy. At a rhythm of 2 beats / sec, at the same frequencies, it enters into a narcotic state. And if you imagine that such music sounds for several hours without a break, the rhythm is pumped up, the signals go to the brain of the audience at the concert (and this is, mainly, young people 13-20 years old), then the most harmless thing that music lovers can expect is a temporary loss orientation in space and sensations similar to an alcoholic hangover.</p>
-                <h1>Frequency</h1>
-                <p>The human ear perceives the range from 15-16 Hz to 20,000-22,000 Hz. Above - ultrasound, below - infrasound. The human ear does not perceive it, but there is an effect on the body.
-                  Uncontrolled exposure to ultrasound is dangerous: damage to internal organs, hemorrhages, edema, inflammation, arthritis occurs. In the brain, biochemical reactions occur, similar to the injection of morphine.                  
-                  Infrasound acts on the central nervous system, accelerates the heart rate, increases the level of adrenaline in the blood, causes excitement, a feeling of euphoria.                  
-                  Recent history. In 2003, the singer Stas Mikhailov literally burst onto our stage. Until recently, it was not known to anyone, and after a while he began to overtake all the stars of Russian show business in earnings, topping the list of Forbes magazine as the highest paid artist.                 
-                  Scientists-specialists who have been studying the influence of infrasound on the human body are interested in this phenomenon. They conducted research using special equipment at the performer's concerts. It turned out that the entire soundtrack was exceeding the permissible frequencies! This was confirmed once again when the technical rider of the artist was studied: a prerequisite was the provision of very powerful specific equipment at the concert.                 
-                  After the publication of this information, Stas Mikhailov was forced to change the technical rider, and at the same time he lost his leading position, "flying out" of the twenty Forbes.</p>
-                  <h1>Volume</h1>
-                  <p>Our ear picks up 55-60 decibels in the best way.
-                    Loud is a sound of 70 dB. At various concerts, the sound reaches 115-120 dB (data near the stage). For comparison: the noise of Niagara Falls is 90-100 dB, the roar of a jet engine is 120-140 dB. 130 dB - pain threshold. 135 dB or more - contusion.                    
-                    American scientists conducted an experiment, the result of which was simply amazing: a raw egg was laid in front of the speaker at a rock concert. After 3 hours it turned out to be "boiled" soft-boiled! The protein is curled up! One can imagine what happens in the human body under the influence of such music.                    
-                    The influence of such a loudness level is perceived by the body as a dangerous situation. The stress hormone adrenaline is produced. The action causes a narrowing of the vessels of the abdominal organs, mucous membranes, but dilates the vessels of the brain and increases the pressure.                    
-                    Each of the three parameters in itself has a negative effect on the body. But with a combination of loudness, frequency and rhythm, irreversible processes occur in the body:                    
-                    - the release of stress hormones, which destroy part of the information in the brain, resulting in personality degradation;                    
-                    - the resonance of the cellular structures of the body, resulting in a condition similar to the intake of alcohol or drugs.                    
-                    But the main effect is directed at the brain and is designed to suppress consciousness. It is identical to that achieved with narcotic drugs. In such a state, the barriers of morality are destroyed, the sense of self-preservation disappears.                    
-                    The experiments of the Japanese scientist Masaru Emoto, who proved the sensitivity of water to information, are widely known. And if you remember that a person is 70% water, then you can understand how destructive the influence of many varieties of low-frequency music (these are the styles of rap, metal, pop, techno). She literally kills young people who are mainly passionate about this kind of music. It deprives people of the opportunity to think sensibly, to perceive the world adequately, deprives creativity and the ability to develop.                    
-                    Another thing lovers of loud music should be aware of is the implications of listening to music with headphones. This is not only harmful, but also very dangerous. When a person listens to music with headphones and increases the volume control, even a computer or smartphone warns that further increasing the volume can be dangerous.                   
-                    To begin to lose hearing, 8 hours of exposure to sound above 85 dB is enough. First of all, hearing impairment will manifest itself as a feeling of congestion, ear ringing or noise.                    
-                    If you work with a noise of 70 dB and higher, then the errors will be 2 times more. And the efficiency is reduced by 30%. Today's schoolchildren often do their homework with music and headphones in their ears. Hence the overall performance results.                   
-                    Not only ultra-modern or just loud music can negatively affect our consciousness. Let me give you an example from my own life.                   
-                    While studying at Moscow State Pedagogical University, we had a course in contemporary music literature, in which we studied the works of Schoenberg, Berg, Cocteau, Millau and other composers of the mid-20th century. "Guess" was approaching. A very impressionable and obligatory classmate was preparing until late, listening to the work of Arnold Schoenberg (the creator of the dodecaphonic technique, who abandoned tonality, stability and euphonious harmonies) "Pierrot Lunar". Overwork and listening to this composition for too long caused hallucinations in my classmate!</p>
+              <h1>Your safety depends on:</h1>
+              <h1>Compliance with safety measures</h1>
+              <p>If COVID-19 is spread in your area, take simple precautions: keep a safe distance from others, wear a mask, ventilate the area well, avoid crowded places, wash your hands and cover your nose and mouth with the bend of your elbow or a tissue when you cough. or sneezing. Follow the recommendations for your locality and place of work.</p>
+                <h1>Rules for wearing a mask</h1>
+                <p>1. If you put on or take off the mask, or touch it, perform hand hygiene.<br>
+                  2. Put on the mask so that it covers your nose, mouth and chin.<br>
+                  3. After removing the mask, put it in a clean plastic bag; fabric masks must be washed daily, medical masks must be disposed of with household waste.<br>
+                  4. Do not use masks with valves.</p>
+                  <h1>Avoiding confined spaces where people are huddled or in contact</h1>
+                  <p>Outbreaks of the disease have been reported among restaurant diners, choir members, visitors to fitness clubs, nightclubs, offices and places of worship, often with a history of being indoors, in which people talk loudly, scream, breathe or sing loudly. <br>
+                    Long-term stay of large numbers of people in close proximity to each other in poorly ventilated rooms increases the risk of contracting COVID-19. Obviously, in such conditions, the virus spreads more efficiently through droplets or aerosols, and therefore the importance of taking preventive measures increases.</p>
             </div>
           </div>
           <div class="cont">
           <div class="under-text">
-            <h1>Don't be one of the addicted to music,<font> be one of the free!</font></h1>
+            <h1>The virus is not a sparrow,<font> it will fly out - you will not catch it.</font></h1>
             <div class="contenjner"></div>
             <h2>What we need to know to be <span>healthy</span></h2>
             <div class="texts">
-            <p>1. Scientific research.<br>
-              Psychologists, together with neurologists, performed the following experiment. Candidates were selected and brain activity recorded before and after listening to contemporary popular music. In addition, memorization tests were used, asking to memorize 20 words. While listening to collections of popular songs, a sharp decrease in the number of hotspots in the right hemisphere and a slight decrease in hotspots in the left were quite noticeable. The memorization test after listening to music was much more difficult than before listening. <br>The subjects returned to their normal state only after an hour.</p>
-              <p>2. The impact of rock music on humans.<br>
-                Not only popular music negatively affects a person, it is also hard rock. Here, too, rhythm, frequency of alternating light, volume are used. An overabundance of high or low frequencies seriously injures the brain. American medical scientist David Elkin proved that a high-volume shrill sound contributes to protein folding.</p>
-                <p>3. The influence of music on plants.<br>
-                  These experiments have been carried out more than once. The same seeds were taken, planted in the same conditions, in a word, everything that could affect their growth was observed.
-                  The first group of seeds was placed under a 3 hour exposure to hard rock. The second group of seeds was pop music at the same time.
-                  The third group of seeds to the classics, Bach's music for 3 hours.
-                  After a certain time, when the seeds sprouted and grew, it turned out that the smallest plants are in the first group, then in the second and the tallest and healthiest in the third group.
-                  Similar experiments were carried out more than once, and on other plants, and the fruits of the plants were evaluated.</p>
-                  <p>4. The influence of classical music on the human body.<br>
-                    Here are some guidelines for using music to treat certain conditions:
-
-                  The works of Mozart are suitable for stabilizing and activating the activity of the brain. These can be the first and third movements from piano sonatas and concertos, "Rondo" from "Little Night Serenade".
-
-                  Oginsky's polonaise, Liszt's Hungarian Rhapsody, Beethoven's Fidelio will save you from headaches.
-
-                  Insomnia can be cured with the suite Peer Gynt by Grieg, The Sad Waltz by Sibelius, and plays by Tchaikovsky.
-
-                  It is useful for hypertensive patients to listen to Chopin's Nocturne in D minor, Mendelssohn's Wedding March and Bach's Violin Concerto in D minor. Pleasant music has a beneficial effect on the blood. Your favorite melody causes an increase in lymphocytes in the blood, it becomes easier for the body to fight diseases.<br>
-
-                  Listening to classics helps to easily memorize information.</p>
-                    <p>5. Ultrasound<br>
-                      The human ear perceives the range from 15-16 Hz to 20,000-22,000 Hz. Above - ultrasound, below - infrasound. The human ear does not perceive it, but there is an effect on the body.
-                      Uncontrolled exposure to ultrasound is dangerous: damage to internal organs, hemorrhages, edema, inflammation, arthritis occurs. Biochemical reactions occur in the brain, similar to the injection of morphine.
-                      Infrasound acts on the central nervous system, accelerates the heart rate, increases the level of adrenaline in the blood, causes excitement, a feeling of euphoria.</p>
+              <p> 1. Distance. <br>
+                Stay at least 1 meter away from people, especially if they have a cough, runny nose, or fever. When you are indoors, you need to keep an extra distance. <br> The more distance you stay, the safer. </p>
+                <p> 2. Mask. <br>
+                  Get in the habit of wearing a mask in crowded places. Masks must be properly handled, stored, handled and disposed of in order to maximize their effectiveness. </p>
+                  <p> 3. Meetings. <br>
+                    Hold meetings outside. Meeting people on the street is much safer than indoors, especially if the area of ​​the room is small and natural ventilation is unsatisfactory. </p>
+                    <p> 4. Disinfection. <br>
+                      Clean and disinfect surfaces regularly, especially those that are frequently touched by people, such as doorknobs, taps, and phone displays. </p>
+                      <p> 5. Ventilation. <br>
+                        Open windows. When you are indoors, you need to increase natural ventilation. </p>
               </div>
           </div>
         </div>
@@ -122,17 +102,12 @@
     <div class="footer">
       <div class="data">
         <div class="address">
-          <h1>Address</h1>
-          <p>Illuminati street, 23</p>
-        </div>
-        <div class="phone">
-          <h1>Phone number</h1>
-          <p>+79999999999</p>
+          <p>© 2021 BrainHub, Inc.</p>
         </div>
       </div>
       <div class="btns">
         <a href="https://vk.com/scream816"><i class="fab fa-vk"></i></a>
-        <a href="https://www.instagram.com/mixan_pistolet1/?hl=ru"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/mixan92"><i class="fab fa-github"></i></a>
         <a href="https://www.youtube.com/channel/UCMOE8QUZsLDTGa370AVrAGQ"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
